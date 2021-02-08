@@ -52,14 +52,10 @@ def solution(n, b = 10):
         n = z
         loop = loop + 1
         #print('n now is', n)
-    #determine the length of the cycle which is the index position of n minus length of list
+    #determine the length of the cycle which is the index position of n minus length of list after removing holding value at 0
     thelist.pop(0)
     cycle = len(thelist) - thelist.index(n)
-    #print(thelist.index(n))
     print('Length of cycle', cycle)
     print('Done!', thelist )
     return cycle
 
-#solution(5221231)
-#solution(1211)
-solution(210022, 3)
